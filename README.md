@@ -10,7 +10,7 @@ Retore the packages
 
 ```bash
 
-dotnet restore
+dotnet restore;
 
 ```
 
@@ -24,7 +24,7 @@ dotnet ef database update;
 
 Run the application
 
-```
+```bash
 
 dotnet run;
 
