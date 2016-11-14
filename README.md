@@ -2,7 +2,7 @@
 
 This is a basic Entity Framework Application. As a proof of concept of getting Entity Framework up and running;
 
-This application uses SQLLite which requires no further installation on a developers behalf.
+This application uses SQLite which requires no further installation on a developers behalf.
 
 ## Getting Started
 
