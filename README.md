@@ -4,6 +4,8 @@ This is a basic Entity Framework Application. As a proof of concept of getting E
 
 This application uses SQLite which requires no further installation on a developers behalf.
 
+[![Build Status](https://travis-ci.org/chrisyboy53/EntityFrameworkBasic.svg?branch=master)](https://travis-ci.org/chrisyboy53/EntityFrameworkBasic)
+
 ## Getting Started
 
 Restore the packages
