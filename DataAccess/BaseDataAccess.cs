@@ -6,12 +6,12 @@ using EntityTest.DataAccess.EntityFramework;
 namespace EntityTest.DataAccess {
     public abstract class BaseDataAccess<T> : IDataAccess<T>  where T: class {
 
-        public abstract Func<T,bool> CompareKeyFunc { get; set; }
+        protected abstract Func<T, int, bool> IdWhereClause { get; }
 
         public virtual T GetById(int id)
         {
             using(PeopleDb db = new PeopleDb()) {
-                return db.Set<T>().FirstOrDefault(CompareKeyFunc);
+                return db.Set<T>().FirstOrDefault(obj => IdWhereClause(obj, id));
             }
         }
 

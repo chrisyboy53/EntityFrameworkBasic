@@ -12,21 +12,20 @@ namespace EntityTest.DataAccess {
         {
             using (var PeopleDb = new PeopleDb()) {
                 return PeopleDb.Person.ToList();
-                PeopleDb.Set<Person>().ToList();    
             }
         }
 
-        public Person GetById(int personId)
+        public Person GetById(int id)
         {
             using (var PeopleDb = new PeopleDb()) {
-                return PeopleDb.Person.FirstOrDefault(T => T.PersonId == personId);
+                return PeopleDb.Person.FirstOrDefault(T => T.PersonId == id);
             }
         }
 
-        public void SaveItem(Person person)
+        public void SaveItem(Person obj)
         {
             using (var PeopleDb = new PeopleDb()) {
-                PeopleDb.Person.Add(person);
+                PeopleDb.Person.Add(obj);
                 PeopleDb.SaveChanges();
             }
         }

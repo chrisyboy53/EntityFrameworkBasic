@@ -8,7 +8,7 @@ namespace EntityTest
     {
         public static void Main(string[] args)
         {
-            IDataAccess<Person> db = new PeopleDataAccess();
+            IDataAccess<Person> db = new PersonDataAccess();
 
             db.SaveItem(new Person {
                 Firstname = "Chris",
