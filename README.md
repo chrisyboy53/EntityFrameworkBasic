@@ -6,7 +6,7 @@ This application uses SQLite which requires no further installation on a develop
 
 ## Getting Started
 
-Retore the packages
+Restore the packages
 
 ```bash
 
