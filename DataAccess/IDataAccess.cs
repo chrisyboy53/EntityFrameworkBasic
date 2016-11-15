@@ -3,13 +3,13 @@ using EntityTest.Models;
 
 namespace EntityTest.DataAccess
 {
-    public interface IDataAccess {
+    public interface IDataAccess<T> where T: class {
 
-        IEnumerable<Person> GetPeople();
+        IEnumerable<T> GetItems();
 
-        Person GetPersonById(int personId);
+        T GetById(int id);
 
-        void SavePerson(Person person);
+        void SaveItem(T obj);
 
     }
 }
