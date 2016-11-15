@@ -1,8 +1,8 @@
-using System;
 using System.Collections.Generic;
 using EntityTest.Models;
 
-namespace EntityTest.DataAccess{
+namespace EntityTest.DataAccess
+{
     public interface IDataAccess {
 
         IEnumerable<Person> GetPeople();
